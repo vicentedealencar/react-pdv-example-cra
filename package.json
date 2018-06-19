@@ -9,9 +9,13 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
+    "format": "prettier --single-quote --no-semi **/*.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.5"
   }
 }
