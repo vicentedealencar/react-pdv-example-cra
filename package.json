@@ -10,12 +10,15 @@
   },
   "scripts": {
     "format": "prettier --single-quote --no-semi **/*.js",
+    "predeploy": "yarn build",
+    "deploy": "now-alias ./build --name=react-pdv-example-cra --alias=react-pdv-example-cra.now.sh",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "now-alias": "^1.1.0",
     "prettier": "^1.13.5"
   }
 }
